@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Onibus</title>
+</head>
+<body>
+    <h1>Onibus</h1>
+    <form action="{% url 'revisao' %}" method="post">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="Confirma">
+    </form>
+</body>
+</html>

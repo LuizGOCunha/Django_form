@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Onibus</title>
+</head>
+<body>
+    <h1>Onibus</h1>
+    <a href="/">Voltar</a>
+    <section class="container mt-2">
+      <h1>Confirme seus dados</h1>
+        <p>Origem: {{ form.ponto_a.value }}</p>
+        <p>Destino: {{ form.ponto_b.value }}</p>
+        <p>Dia de ida: {{ form.dia_de_ida.value }}</p>
+        <p>Dia de volta: {{ form.dia_de_volta.value }}</p>
+        <p>Conforto: {{ form.conforto.value }}</p>
+
+    </section>
+</body>
+</html>
